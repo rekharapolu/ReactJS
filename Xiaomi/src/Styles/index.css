@@ -1,0 +1,210 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'MiSans Latin', sans-serif;
+}
+
+
+#nav{
+/* border: 2px solid red; */
+height: 50px;
+width: 100%;
+margin: 0%;
+margin-top: 10px;
+display: flex;
+justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    /* border: 2px green; */
+}
+ul li{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    /* border: 2px solid; */
+    
+}
+ul li a {
+    text-decoration: none;
+    color: #191919;
+    padding: 10px 35px;
+    font-size: 16px;
+}
+
+ul li a:hover{
+    color: #ff6900;
+    border-bottom: 3px solid #ff6900 ;
+}
+
+#poco:hover{
+    background-color: rgb(248, 248, 6);
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: none;
+}
+/* Container to hold both SVGs */
+.svg-container {
+    position: relative;
+    padding: 10px;
+    width: 100px; /* Match SVG dimensions */
+    height: 43px; /* Match SVG dimensions */
+    overflow: hidden; /* Prevent overflow issues */
+  }
+.svg-two{
+    border-radius: 15px;
+}
+  /* Style for both SVGs */
+  .svg-one,
+  .svg-two {
+    position: absolute; /* Place them on top of each other */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+  }
+
+  /* Initially, the first SVG is visible, and the second is hidden */
+  .svg-one {
+    opacity: 1;
+    transform: translateX(0); /* Default position */
+  }
+
+  .svg-two {
+    opacity: 0;
+    transform: translateX(-50px); /* Positioned slightly off-screen */
+  }
+
+  /* On hover, swap the two SVGs */
+  .svg-container:hover .svg-one {
+    opacity: 0;
+    transform: translateX(50px); /* Move out of view */
+  }
+
+  .svg-container:hover .svg-two {
+    opacity: 1;
+    transform: translateX(0); /* Move into place */
+  }
+  #h1{
+    text-align: center;
+    background-color: #dbdbdb;
+    padding-top: 100px ;
+    padding-bottom: 30px;
+  }
+
+  #body{
+    background-color: #dbdbdb;
+    height: 330px;
+    display: flex;
+  }
+
+  #body div{
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+  }
+  .fa-qrcode , .fa-file , .fa-shield , .fa-headset{
+    font-size: 70px;
+  }
+  .hover:hover{
+    color: #ff6900;
+  }
+#footer{
+  background-color: #000000;
+  color: #696969;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+}
+#footer div{
+  text-align: center;
+  flex: 1;
+  width: 50%;
+  height: 200px;
+}
+#footer div ul{
+  display: block;
+  height: auto;
+  list-style: none;
+  justify-content: space-around;
+  
+}
+#footer div ul li a{
+  font-size: 15px;
+  color: #696969;
+}
+
+#footer div ul li a:hover{
+  border-bottom: none;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+h3{
+  color: #ffffff;
+}
+
+.fa-square-facebook, .fa-square-youtube, .fa-x-twitter, .fa-square-instagram, .fa-square-xing{
+  color: #ffffff;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+#h2{
+  color: #ffffff;
+  font-size: 18px;
+}
+
+  .email-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    padding: 5px;
+    max-width: 400px;
+    overflow: hidden;
+  }
+
+  /* Input field */
+  .email-input {
+    flex: 1;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    color: #696969;
+    background-color: #000000;
+    width: 300px;
+  }
+
+  /* Submit button */
+  .email-button {
+    background-color: #696969;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .email-button:hover {
+    background-color: #ff6900;
+  }
