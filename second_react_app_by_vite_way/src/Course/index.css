@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: rgb(197, 232, 128);
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.courses{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+    background-color: aqua;
+}
+.course{
+    border: 2px solid yellow;
+    padding: 20px 40px;
+    background-color: pink;
+    width: 400px;
+}
+
+h3{
+    
+    border-bottom: 2px solid blueviolet;
+}
+
+.span{
+    color: crimson;
+    display: inline-block;
+    padding: 10px;
+}
